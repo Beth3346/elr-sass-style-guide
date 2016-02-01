@@ -34,6 +34,10 @@ There are always exceptions to these rules especially when using 3rd party compo
 + Avoid magic numbers https://css-tricks.com/magic-numbers-in-css/
 + Prefer percentages and max/min widths over fixed layouts
 
+#### Use rems instead of px for all sizing except media query breakpoints
++ set a base value for the body element
++ use sass to calculate rems
+
 #### !important
 + Avoid !important whenever possible
 + Ok for overriding vendor styles in 3rd party components that you have no control over.
@@ -67,7 +71,7 @@ There are always exceptions to these rules especially when using 3rd party compo
 + Avoid third-party frameworks if possible.
 + These are usually bloated and styles must be overridden constantly.
 + If you must use a framework ensure that you remove unused styles.
-+ If you can build your own framework with mixins that work for you.
++ If you can, build your own framework with mixins that work for you.
 
 #### Helper Classes
 + Helper classes are great for quick prototyping and initial layouts.
@@ -157,7 +161,7 @@ There are always exceptions to these rules especially when using 3rd party compo
 #### Use variables for all colors
 + Chances are a color isn't one-off, and even if you think it is, once it's in a variable you might see uses for it elsewhere.
 + Variations on that color can often be handled by the Sass color functions like lighten() and darken()
-+ This make updating colors easier (change in one place, whole color scheme updates).
++ This makes updating colors easier (change in one place, whole color scheme updates).
 + Don't use color keywords
 
 #### Media Queries
@@ -179,10 +183,6 @@ There are always exceptions to these rules especially when using 3rd party compo
 
 #### Final Output Is On You
 + Write Sass such that the final CSS output is just as you would have written it without Sass.
-
-#### Use rems instead of px for all sizing except media query breakpoints
-+ set a base value for the body element
-+ use sass to calculate rems
 
 #### Sources:
 + https://ponyfoo.com/articles/css-the-good-parts
