@@ -9,13 +9,11 @@ There are always exceptions to these rules especially when using 3rd party compo
 
 #### Formatting
 + Use dashes instead of underscore or camelCase for all filenames and selectors
-+ Always leave a space between selector and opening brace
 + Always leave a blank line between nested selectors
 + Always leave a blank line after closing braces
-+ Use a single space after the colon
 + Always end property declarations with a semicolon
-+ Put spaces after : in property declarations
-+ Put spaces before { in rule declarations
++ Put a single space after : in property declarations
++ Put a single space before { in rule declarations
 + No double spacing after rules
 + One selector per line, One rule per line
 + If a selector has one style rule its ok to have it all on one line
@@ -23,7 +21,7 @@ There are always exceptions to these rules especially when using 3rd party compo
 + List related properties together
 + Always use scss syntax
 + Always use shorthand rules
-+ Use hex color codes unless transparancy is needed.
++ Use hex color codes.
 + Avoid trailing spaces
 + All compiled CSS should be compressed
 + Don't just add new styles to the end of the file. Locate and update existing selectors.
@@ -133,6 +131,7 @@ There are always exceptions to these rules especially when using 3rd party compo
 #### Break Into As Many Small Files As Makes Sense
 + There is no penalty to splitting into many small files. Do it as much as feels good to the project.
 + I know I find it easier to jump to small specific files and navigate through them than fewer/larger ones.
++ This also makes it easy to remove 'dead code'.
 
 #### Partials
 + Partials are named _partial.scss
@@ -166,11 +165,11 @@ There are always exceptions to these rules especially when using 3rd party compo
 
 #### Media Queries
 + Use ems for breakpoints
-+ Don't use use screen
++ Don't use use 'screen' as this keyword is unecessary and limiting.
 + Keep these nested in the elements they style.
     + Since styles are modular this makes much more sense than listing them in a separate file.
 + Check all known breakpoints (iPad, iPhone, etc.)
-+ Attept to make sites look good at any breakpoint.
++ Attempt to make sites look good at any breakpoint.
     + Don't only design for device specific widths.
     + There is no 'breakpoint'
     + Styling elements this way will help to future proof sites.
